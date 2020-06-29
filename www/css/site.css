@@ -1,0 +1,732 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Light.eot');
+    src: url('../fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-Light.woff2') format('woff2'),
+        url('../fonts/Montserrat-Light.woff') format('woff'),
+        url('../fonts/Montserrat-Light.ttf') format('truetype'),
+        url('../fonts/Montserrat-Light.svg#Montserrat-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';`
+    src: url('../fonts/Montserrat-Bold.eot');
+    src: url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('../fonts/Montserrat-Bold.woff') format('woff'),
+        url('../fonts/Montserrat-Bold.ttf') format('truetype'),
+        url('../fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('../fonts/source-code-pro-v11-latin-regular.eot');
+    src: url('../fonts/source-code-pro-v11-latin-regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/source-code-pro-v11-latin-regular.woff2') format('woff2'),
+        url('../fonts/source-code-pro-v11-latin-regular.woff') format('woff'),
+        url('../fonts/source-code-pro-v11-latin-regular.ttf') format('truetype'),
+        url('../fonts/source-code-pro-v11-latin-regular.svg#sourceCodePro') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    background: url(../images/bg-main2.jpg) no-repeat;
+    background-size: cover;
+}
+body.modal-open {
+    overflow-x: hidden !important;
+}
+.modal-dialog {
+    position:absolute;
+    top:50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    -ms-transform: translate(-50%, -50%) !important;
+    -webkit-transform: translate(-50%, -50%) !important;
+    width:1000px;
+  }
+#terms .modal-header, #fees .modal-header, #faq .modal-header {
+    border: none;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    padding: 40px 20px 0 50px;
+}
+#terms .modal-header h4, #fees .modal-header h4, #faq .modal-header h4 {
+    color: #000;
+    font-family: 'Source Code Pro';
+}
+#terms .modal-body, #fees .modal-body, #faq .modal-body {
+    color: #000;
+    padding: 20px 50px 50px;
+}
+#terms .modal-body p, #fees .modal-body p, #faq .modal-body p {
+    color: #000;
+    font-size: 1.125em;
+    font-family: 'Source Code Pro';
+}
+.site-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#aboutus-page .site-logo {
+    -webkit-filter: blur(5px); /* Safari */
+    filter: blur(5px);
+    opacity: 0.5;
+  }
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-nav li {
+    padding: 0;
+}
+.navbar-inverse {
+    background: transparent;
+}
+.navbar-nav li.copyright {
+    padding: 15px 0;
+    color: #acbcc9;
+    font-weight: 300;
+}
+.navbar-inverse .navbar-nav li a {
+    font-family: 'Source Code Pro';
+    font-weight: bold;
+    font-size: 1.125em;
+    text-transform: uppercase;
+    color: #597189;
+    border-radius: 30px;    
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #fff;
+    /*background-color: transparent;*/
+    background: rgb(20,52,137);
+    background: linear-gradient(90deg, rgba(20,52,137,1) 0%, rgba(149,81,255,1) 100%);
+}
+.navbar-inverse .navbar-nav>li>a:focus {
+    color: #fff;
+    background-color: transparent;
+}
+.navbar-inverse .navbar-nav > .current_page_item > a,
+nav .current_page_item {
+    /*background: none !important;*/
+    border-radius: 30px;
+}
+.navbar-inverse .navbar-nav > .current_page_item > a:hover,
+nav .current_page_item:hover {
+    background: rgb(20,52,137);
+    background: linear-gradient(90deg, rgba(20,52,137,1) 0%, rgba(149,81,255,1) 100%);
+}
+nav .current_page_item {
+    background: rgb(20,52,137);
+    background: linear-gradient(90deg, rgba(20,52,137,1) 0%, rgba(149,81,255,1) 100%);
+}
+.nav-animation {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    margin-top: -40px;
+    left: auto !important;
+    display: block;
+    width: 80px;
+    height: 80px;
+    z-index: 10000;
+}
+.countdown {
+    color: #fff;
+    overflow: hidden;
+    width: 280px;
+    position: fixed;
+    top:40px;
+    left: 40px;
+    z-index: 10000;
+}
+.countdown .time {
+    padding: 0;
+    float: left;
+    width: 70px;
+    text-align: center;
+}
+.countdown .date {
+    font-family: 'Source Code Pro';
+    font-weight: 800;
+    font-size: 2em;
+    text-align: center;
+}
+.countdown .label {
+    font-family: 'Source Code Pro';
+    font-weight: 300;
+    font-size: 1.125em;
+    text-align: center;
+}
+.fade-bottom {
+    background: url(../images/bg-fade-bottom.png) repeat-x left bottom;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 20%;
+    bottom: 0;
+}
+.fade-left {
+    background: url(../images/bg-fade-left.png) repeat-y left center;
+    background-size: cover;
+    position: fixed;
+    z-index: 99;
+    height: 100%;
+    width: 80%;
+    left: 0;
+}
+.fade-right {
+    background: url(../images/bg-fade-right2.png) repeat-y right center;
+    background-size: cover;
+    position: fixed;
+    z-index: 99;
+    height: 100%;
+    width: 80%;
+    right: 0;     
+}
+.parallax-page {
+    z-index: 999 !important;
+}
+#aboutus-page, #celebration-page, #runinfo-page {
+    padding: 40px 0 0;
+}
+#runinfo-page, #wish-page {
+    padding: 0px 0 0 9%;
+}
+#aboutus-page h1, #celebration-page h1, #runinfo-page h1, #wish-page h1, #merchandise-page h1, #registration-page h1 {
+    font-size: 2.25em;
+    color: #fff;
+    font-family: 'Source Code Pro';
+    font-weight: 300;
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 1.5em;
+}
+#aboutus-page p, #celebration-page p, #runinfo-page p, #wish-page p, #merchandise-page p, #registration-page p, 
+#entitlements-page p {
+    font-family: 'Source Code Pro';
+    font-size: 1.125em;
+    color: #fff;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.5em;
+}
+#celebration-page small {
+    font-size: 75%;
+    color: #fff;
+    line-height: normal;
+}
+#merchandise-page h1 {
+    padding: 0 0 0 40%;
+}
+.aboutus-para-top p {
+    padding: 0 20px 0 0;
+}
+.aboutus-para-bottom p {
+    padding: 0 0 0 70px;
+}
+.btn-medium {
+	background-image: linear-gradient(to right, #0f3a9d 0%, #c32022 100%);
+	border-radius: 40px;
+    box-sizing: border-box;
+	color: #FFF;
+	display: block;
+	height: 44px;
+	letter-spacing: 1px;
+	margin: 20px 0 0;
+	padding: 1px;
+	position: relative;
+    text-decoration: none;
+	text-transform: uppercase;
+	width: 250px;
+    z-index: 2;
+    font-family: 'Source Code Pro';
+    font-size: 1.125em;
+    font-weight: 800;
+}
+.btn-medium:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.btn-medium span {
+	align-items: center;
+	background: #000;
+	border-radius: 40px;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	transition: background .5s ease;
+	width: 100%;
+}
+.btn-medium-user:hover span {
+    background: #000;
+}
+.btn-normal {
+    float: left;
+    transition: all 0.3s ease;
+}
+.btn-normal:hover {
+    filter:contrast(200%);
+}
+.btn-normal img {
+    width: 95%;
+}
+.button-cont div {
+    padding: 0;
+    text-align: center;
+}
+#runinfo-page h1, #wish-page h1 {
+    margin: 4% 0 1%;
+}
+#runinfo-page p, #wish-page p {
+    padding: 5% 0;
+}
+.runinfo-content {
+    padding: 0% 0 2%;
+}
+.about-bottom-para h4 {
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 30% 0 20px 0;
+    color: #fff;
+}
+.about-bottom-para p {
+    font-size: 1em;
+    font-weight: normal;
+}
+.celebration-left {
+    /*padding-right: 10%;*/
+}
+.celebration-left img {
+    max-width: 90%;
+    margin-bottom: 10%;
+}
+.celebration-right {
+    /*padding: 15% 0 0 10%;*/
+}
+.celebration-right img {
+    max-width: 50%;
+    margin-bottom: 10%;    
+}
+#entitlements-page {
+    text-align: center;
+    padding: 2% 0 0;
+}
+#entitlements-page.parallax-page {
+    max-width:80%;
+}
+#entitlements-page .col-sm-6 {
+    padding: 0 7%;
+}
+#entitlements-page img {
+    max-width: 100%;
+    height: auto;
+}
+#entitlements-page p {
+    height: 150px;
+    padding: 4% 9% 0;
+}
+#entitlements-page .run-image img {
+    width: 20%;
+    margin: 0 auto;
+}
+#merchandise-page {
+    text-align: right;
+}
+#merchandise-page {
+    top: 10% !important;
+}
+.title.side span {
+    display: contents;
+    font-weight: normal;
+    font-size: 0.875em;
+    text-transform: none;
+}
+.qr-code img {
+    max-width: 80%;
+}
+#registration-page .reg-content {
+    margin: 0 0 8%;
+}
+#registration-page .side-vote h4 {
+    font-size: 3.5em;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 2% 0 0;
+    font-weight: 300;
+}
+#registration-page .side-vote h1 {
+    font-size: 5em;
+    color: #fff;
+    font-weight: bold;
+    margin: 0 0 3%;
+    line-height: 1em;
+}
+#registration-page.parallax-page {
+    max-width:80%;
+}
+#terms.modal, #fees.modal, #faq.modal {
+    background-color: rgba(0,0, 0, 0.5);
+}
+.modal-header button.close {
+    margin: -8px 28px 0 0;
+    font-size: 40px;
+    color: #000;
+    opacity: 1;
+    font-weight: normal;
+}
+.modal-header button.close:focus {
+    outline: none;
+}
+.scrollcontent {
+    max-height: 530px;
+    width: 100%;
+    overflow: auto;
+  }
+  .modal-content {
+      border-radius: 30px;
+  }
+
+  /***Language Selection***/
+  .bootstrap-select.language {
+    position: absolute;
+    z-index: 1000;
+    top: 50px;
+    right: 50px;
+  }
+.dropdown-menu > li > a span.flag-icon {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 0 10px 0 0;
+}
+.dropdown-toggle.selectpicker.btn-default, .dropdown-toggle.selectpicker.btn-default:focus, 
+.dropdown-toggle.selectpicker.btn-default:active {
+    color: #fff;
+    background: transparent;
+    outline: 0 !important;
+    font-weight: bold;
+}
+.dropdown-toggle.selectpicker.btn-default .flag-icon {
+    margin: 0 10px 0 0;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 2;
+}
+.language .dropdown-menu > li > a {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-family: 'Source Code Pro';
+    font-weight: 300;
+    font-size: 1.125em;
+    background-color: rgba(255,255,255,0.7);
+    padding: 8px 30px;
+}
+.language .dropdown-menu > li > a span {
+    color: #333;
+    font-size: 1.0625em;    
+}
+.language .dropdown-menu {
+    left: -20px;
+}
+.language .dropdown-menu > li > a:focus, .language .dropdown-menu > li > a:active {
+    outline: 0 !important;
+}
+.bootstrap-select.btn-group .dropdown-menu {
+    background: transparent;
+    border-radius: 15px;
+}
+.language .dropdown-menu > li > a:hover {
+    background-color: rgba(255,255,255,1);
+}
+.flag-icon-sg {
+    background-image: url(../images/ico-flag-sg.png) !important;
+}
+.flag-icon-id {
+    background-image: url(../images/ico-flag-id.png) !important;
+}
+.flag-icon-th {
+    background-image: url(../images/ico-flag-th.png) !important;
+}
+.flag-icon-vn {
+    background-image: url(../images/ico-flag-vn.png) !important;
+}
+  /***FAQ Page****/
+body.faq {
+    background: #000 url(../images/bg-faq.png) repeat-y left top;
+    overflow: visible;
+    height: auto;
+    background-size: contain;
+    font-family: 'Source Code Pro';
+    font-weight: 300;
+    font-style: normal;
+}
+body.faq .container {
+     max-width: 1200px;
+     margin: 0 auto;
+     color: #fff;
+     padding: 5% 0;
+}
+body.faq .fade-blue {
+    background: url(../images/bg-fade-blue.png) repeat-y left top;
+}
+body.faq .fade-red {
+    background: url(../images/bg-fade-red.png) repeat-y right top;
+}
+body.faq h1 {
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0 0 4%;
+    font-family: 'Source Code Pro';
+}
+body.faq h2 {
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 0 0 1%;
+    font-family: 'Source Code Pro';
+}
+.faq-content {
+    padding: 0 0 6%;
+}
+.faq-content h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: 'Source Code Pro';
+}
+.faq-content p {
+    color: #fff;
+    font-size: 1.5em;
+    font-family: 'Source Code Pro';
+}
+.faq-content a {
+    color: #428bca;
+    text-decoration: none;
+}
+.faq-content a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+#faq h2 {
+    font-size: 2em;
+    font-family: 'Source Code Pro';
+}
+#faq .faq-content h3, #faq .faq-content p {
+    color: #000;
+    font-weight: normal;
+    font-size: 1.125em;
+}
+#faq .faq-content {
+    padding: 0 0 1%;
+}
+
+@media (max-width:1280px) {
+    body.faq .container {
+        width: 100%;
+        padding: 5%;
+    }
+    .faq-content a {
+        color: #fff;
+        text-decoration: underline;
+    }
+    .faq-content {
+        font-size: 0.875em;
+    }
+}
+/**Run Info**/
+.runinfo-content {
+    /*text-align: center;*/
+    color: #fff;
+}
+.runinfo-content .title {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.runinfo-content .row div {
+    height: 61px;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+}
+.runinfo-content .row div.three {
+    background-image: url(../images/repeat-horizontal.png), url(../images/repeat-vertical.png), url(../images/repeat-horizontal.png);
+    background-position: left bottom, right top, left top;
+    background-repeat: repeat-x, repeat-y,  repeat-x;
+}
+.runinfo-content .row div.two {
+    background-image: url(../images/repeat-horizontal.png), url(../images/repeat-vertical.png);
+    background-position: left bottom, right top;
+    background-repeat: repeat-x, repeat-y;
+}
+.runinfo-content .row div.bottom {
+    background: url(../images/repeat-horizontal.png) repeat-x left bottom;
+}
+.runinfo-content .row div.side {
+    background: url(../images/repeat-vertical.png) repeat-y right top;
+}
+.runinfo-content .row.icons img {
+    margin: 0 8px 0 0;
+}
+.runinfo-content .row.trophies img {
+    max-width: 80%;
+    height: auto;
+}
+#open {
+    z-index: 10000;
+}
+#open .modal-dialog {
+    width: 900px;
+}
+#open .modal-content {
+    border-radius: 36px !important;
+}
+#open .modal-body, #open .modal-header {
+    padding: 0px;
+    border-radius: 36px;
+}
+#open .modal-header {
+    min-height: 0;
+    border: 0px solid #000;
+    padding: 0;
+    position: relative;
+}
+#open .modal-header button.close {
+    margin: 30px 30px 0 0;
+    font-size: 60px;
+    color: #000;
+    opacity: 1;
+    font-weight: normal;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+}
+#open .modal-content {
+    background: transparent;
+}
+.popup {
+    overflow: hidden;
+    background: #fff;
+    border-radius: 36px;
+}
+.pop_left {
+    float: left;
+    width: 346px;
+}
+.pop_right {
+    float: left;
+    width: calc(100% - 346px);
+    text-align: center;
+    padding: 40px 40px;
+}
+.pop_right .content{
+    padding: 40px 35px 0;
+}
+.pop_right h1 {
+    font-size: 2.8em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+    font-family: 'Source Code Pro';
+    padding: 0 0 30px;
+}
+.pop_right p {
+    font-size: 1.25em;
+    color: #000;
+    font-family: 'Source Code Pro';
+    font-weight: 300;
+    line-height: 1.8em; 
+}
+/***Mosue scroll animation**/
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+.icon-scroll {
+    width: 30px;
+    height: 50px;
+    margin-left: -20px;
+    top: 50%;
+    margin-top: -35px;
+    box-shadow: inset 0 0 0 3px #fff;
+    border-radius: 25px;
+    display: block;
+}
+.icon-scroll:after {
+    content: '';
+    background: url(../images/arrow-right.png) no-repeat;
+    width: 7px;
+    height: 11px;
+    position: absolute;
+    top: 20px;
+    right: -15px;
+}
+.icon-scroll:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 6px;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+          animation-name: scroll;
+          border: 3px solid #fff;
+}
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+@media only screen and (min-width: 1367px) {
+    .navbar-nav {
+        width: 100%;
+        margin: 0 0 34px;
+    }
+    .runinfo-content {
+        padding: 2% 0 5%;
+    }
+    .runinfo-content .row.trophies img {
+        max-width: 100%;
+    }
+}

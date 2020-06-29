@@ -1,99 +1,648 @@
-/* Medium Layout: 1280px. */
+/*------------------------------------------------------------------
+[Responsive]
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {}
+Makes the theme responsive
+-------------------------------------------------------------------*/
 
+@media (min-width: 1211px) {
 
-/* Tablet Layout: 768px. */
+	.parallax-page{
+		width:100%;
+		}
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .mainmenu-area #primary-menu > ul > li > a {
-        padding: 30px 12px;
-    }
-    .header-area {
-        padding-top: 80px;
-    }
-    .price-table,
-    .box {
-        padding: 30px 15px;
-    }
-    .price-table.active {
-        padding: 50px 15px;
-    }
-    .single-team {
-        margin-bottom: 30px
-    }
-    .side-icon-boxes {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-    }
+	.parallax-portfolio #pager  img{
+		width:50px;
+		}
+
+	.parallax-page .bx-viewport,
+	.parallax-page .bx-viewport li,
+	.parallax-page .bx-viewport .blogpost,
+	.parallax-page .bx-viewport .member,
+	.parallax-page  .page-contents {
+		height: 395px !important;
+		}
+
 }
 
 
-/* Mobile Layout: 320px. */
+@media (min-width: 941px) and (max-width: 1210px) {
 
-@media only screen and (max-width: 767px) {
-    body {
-        font-size: 13px;
-    }
-    .header-area {
-        padding-top: 120px;
-        padding-bottom: 100px;
-        height: auto;
-    }
-    .page-title h2,
-    .header-text h2 {
-        font-size: 20px;
-    }
-    .mainmenu-area .navbar-toggle {
-        margin-top: 20px;
-    }
-    .mainmenu-area .navbar-toggle .icon-bar {
-        background-color: #ffffff;
-    }
-    .mainmenu-area #primary-menu {
-        background-color: #138FC2;
-    }
-    .mainmenu-area #primary-menu ul {
-        overflow-y: auto;
-        max-height: 70vh;
-        margin: 0;
-    }
-    .mainmenu-area #primary-menu > ul > li > a {
-        padding: 15px;
-        overflow: hidden;
-    }
-    .box {
-        padding: 30px 15px;
-    }
-    .box .box-icon {
-        height: auto;
-    }
-    .single-blog,
-    .single-team,
-    .price-table.active {
-        margin-top: 30px;
-    }
-    .form-double input {
+	.parallax-page .bx-viewport,
+	.parallax-page .bx-viewport li,
+	.parallax-page .bx-viewport .blogpost,
+	.parallax-page .bx-viewport .member,
+	.parallax-page  .page-contents {
+		height: 340px !important;
+		}
+
+	.parallax-page .bx-viewport .member{
+		width:220px !important;
+		}
+
+	.parallax-page .team-desc{
+		height: 220px;
+		}
+
+	.blogpost{
+		width:380px !important;
+		}
+	
+	.parallax-portfolio .slider li img, .parallax-portfolio #pager{
+		width:350px;
+		}
+
+	.parallax-page{
+		width:100%;
+		max-width: 680px;
+		}
+
+	.parallax-portfolio .contents{
+		padding: 40px 40px 30px 40px;
+		}
+
+	.parallax-portfolio li .contents p{
+		padding: 15px 0;
+		margin: 0;
+		line-height: 18px !important;
+		}
+
+	.parallax-portfolio .contents h2{
+		margin-bottom: 0;
+		font-size: 18px;
+		}
+
+	.post_format:before, 
+	.post_format{
+		height:35px;
+		width:35px;
+		line-height: 30px;
+		}
+
+	.blogpost .blog-post-title,
+	.blogpost .meta-details{
+		padding-left: 40px;
+		}
+
+	.parallax-portfolio .btn-group{
+		top:20px;
+		right:20px;
+		}
+
+	.parallax-portfolio #pager  img{
+		width:50px;
+		}
+
+	/* Comment Form */
+	#commentform #author, 
+	#commentform #email, 
+	#commentform #url, 
+	#commentform textarea {
+		width:70%;
+		}
+
+}
+
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 769px) and (max-width: 940px) {
+
+	.parallax-page .bx-viewport,
+	.parallax-page .bx-viewport li,
+	.parallax-page .bx-viewport .blogpost,
+	.parallax-page .bx-viewport .member,
+	.parallax-page  .page-contents {
+		height: 302px !important;
+		}
+
+	.parallax-page .bx-viewport .member{
+		width:200px !important;
+		}
+
+	.parallax-page .team-desc{
+		height: 200px;
+		}
+
+	.blogpost{
+		width:350px !important;
+		}
+
+	.small-title .blog-post-title a, 
+	.small-title .blog-post-title {
+		font-size: 16px;
+		padding-left: 0;
+		line-height: 22px;
+		padding-bottom: 10px;
+		}
+
+	.page-contents .member h3{
+		font-size: 16px;
+		}
+
+	.entry-header .meta-details{
+		padding-left: 0;
+		}
+
+	.blogpost .post_format:before, 
+	.blogpost .post_format{
+		display: none;
+		}
+	
+	.parallax-portfolio .slider li img, .parallax-portfolio #pager{
+		width:300px;
+		}
+	
+	.content-box .parallax-portfolio .btn-group{
+		top:12px;
+		}	
+	
+	.parallax-page{
+		width:100%;
+		max-width: 620px;
+		}
+
+	.parallax-portfolio .contents{
+		padding: 35px 40px 30px 40px;
+		}
+
+	.parallax-portfolio li .contents p{
+		padding: 15px 0;
+		margin: 0;
+		line-height: 18px !important;
+		}
+
+	.parallax-portfolio .contents h2{
+		margin: 0;
+		font-size: 20px;
+		}
+
+	.parallax-portfolio #pager a{
+		padding: 2px;
+		}
+
+	.parallax-portfolio .btn-group{
+		top:15px;
+		right:auto;
+		left: 15px;
+		}
+
+	.parallax-portfolio #pager img{
+		width:40px;
+		}
+
+	/* Comment Form */
+
+	#commentform #author, 
+	#commentform #email, 
+	#commentform #url, 
+	#commentform textarea {
+		width:80%;
+		}
+
+ }
+
+
+@media (max-height:780px){
+
+	.parallax-page .page-title{
+		display: table;
+		margin-bottom: 15px;
+		}
+	
+	.parallax-page .page-title h1, .parallax-page .page-title h4{
+		display: table-cell;
+		vertical-align: middle;	
+		} 
+
+	.parallax-page .page-title h4{
+		padding-left: 10px;
+		}
+	
+	.parallax-page .bx-viewport,
+	.parallax-page .bx-viewport li,
+	.parallax-page .bx-viewport .blogpost,
+	.parallax-page .bx-viewport .member,
+	.parallax-page  .page-contents {
+		height: 360px !important;
+		}
+	
+	.parallax-page .blogpost .entry-header{
+		padding: 10px;
+		}
+		
+	.parallax-page .content-box .blogpost .entry-header{
+		padding: 10px 10px 10px 0;
+		}
+	
+	.parallax-page .post_format{
+		left: 10px;
+		top:10px;
+		}
+		
+	.parallax-page .content-box .post_format{
+		left: 0;
+		}		
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 480px) and (max-width: 768px) {
+
+	.parallax-page .bx-viewport,
+	.parallax-page .bx-viewport li,
+	.parallax-page .bx-viewport .blogpost,
+	.parallax-page .bx-viewport .member,
+	.parallax-page  .page-contents {
+		height: 268px !important;
+		}
+		
+	#portfolio .col-xs-6{
+		width:49% !important;
+		}	
+	
+	
+	.parallax-page .page-title h1{
+		font-size: 28px;
+		}
+
+	.content-box .parallax-portfolio .btn-group{
+		top:12px;
+		}	
+		
+	.parallax-page .bx-viewport .member{
+		width:170px !important;
+		}
+
+	.parallax-page .team-desc{
+		height: 170px;
+		}
+
+	.parallax-page .team p{
+		padding-bottom: 5px;
+		}
+
+	.parallax-page .team h3{
+		font-size: 16px;
+		}
+
+	.parallax-portfolio .slider li .attachent-container, 
+	.parallax-portfolio #pager{
+		width:45% !important;
+		display: block;
+		float: left;
+		margin-right: 25px;
+		}
+
+	.parallax-portfolio .slider li .attachent-container{
+		height: 270px;
+		}
+
+	.parallax-portfolio .slider li img{
+		width:200px;
+		margin: 0;
+		}
+
+	.parallax-portfolio #pager{
+		width:200px;
+		bottom: 10px;
+		}
+	
+	.parallax-portfolio .contents{
+		padding-top: 20px !important;
+		}
+	
+	.parallax-portfolio .bx-controls-direction{
+		width:200px;
+		}		
+
+	.parallax-portfolio #pager img{
+		width:33px;
+		}
+
+	.blogpost{
+		width:330px !important;
+		}
+
+	.small-title .blog-post-title a, 
+	.small-title .blog-post-title{
+		font-size: 15px;
+		line-height: 20px;
+		}
+
+	.parallax-page{
+		width: 480px;
+		}
+
+	.entry-header .meta-details{
+		padding-left: 0;
+		}
+
+	.parallax-portfolio #pager a{
+		padding: 2px;
+		}
+		
+		
+	.parallax-page .link{
+		padding: 10px 15px !important;
+		font-size: 16px;
+		} 	
+
+	.parallax-portfolio .contents{
+		padding: 25px 35px 25px 35px;
+		}
+
+	.parallax-portfolio li .contents p{
+		padding: 15px 0;
+		margin: 0;
+		line-height: 18px !important;
+		}
+
+	.parallax-portfolio .contents h2{
+		margin: 0;
+		font-size: 20px;
+		}
+
+	.parallax-portfolio .btn-group{
+		top:15px;
+		right:auto;
+		left: 15px;
+		}
+
+	.post_format:before, .post_format{
+		display: none;
+		}
+
+	.blog-post-title{
+		padding-left: 0;
+		}
+
+	.parallax-page .entry-header, .parallax-page .entry-content{
+		padding: 15px 30px 20px 30px;
+		}
+
+	/* Comment Form */
+	#commentform #author, 
+	#commentform #email, 
+	#commentform #url, 
+	#commentform textarea {
+		width:90%;
+		}
+
+	.comment-meta{
+		width:280px;
+		}
+
+	.comment-metadata time{
+		font-size: 12px;
+		}
+
+	.comment-list ol.children{
+		padding-left: 20px;
+		}
+
+}
+
+/* Landscape phones and down */
+@media (max-width:480px), (max-height:480px)  {
+
+	.template-parallax .site-footer .footer-info{
+		padding:10px 0;	
+		text-align: center;
+	}
+			
+	.parallax-portfolio .contents{
+		padding-top: 0 !important;
+		}
+
+	.parallax-page:hover{
+		z-index: 9 !important;
+		}
+
+	#colophon{
+		height: 45px;
+		}
+		
+	.col-sm-4 {
         width: 100%;
-    }
-    .footer-top {
-        margin-bottom: 50px;
-    }
-    .x-left {
-        text-align: left;
-    }
-    .mainmenu-area .logo {
-        margin-left: 15px;
-    }
+    	}
+    	
+    #portfolio 	.col-sm-4{
+   	 width: 100% !important;
+    	}
+
+	/* Parallax Page Stuff*/
+	.parallaxItem{
+		visibility: hidden;
+		}
+	
+	.blog-post-title, 
+	.blog-post-title a{
+		font-size: 21px !important;
+		}
+
+	.blogpost .overlay{
+		position: relative;
+		bottom: auto;
+		}
+
+	.page-contents {
+		overflow-y: auto;
+		}
+
+	.equalheight{
+		min-height: 0 !important;
+		}
+
+	.team-desc{
+		position: static;
+		height: auto;
+		min-height: 0 !important;
+		}
+
+	.page-contents .member h3{
+		font-size: 20px;
+		}
+
+	.team p{
+		padding-bottom: 5px;
+		}
+
+	.parallax-page .page-title h1{
+		font-size: 22px;
+		}
+
+	.parallax-page .page-title{
+		margin-bottom: 12px;
+		}
+
+	.parallax-page{
+		max-width: 95%;
+		top:75px !important;
+		}
+
+	.parallax-page .member, 
+	.parallax-page .team,
+	.blogpost, .blogpage, 
+	.parallax-portfolio .slider,  
+	.parallax-portfolio .slider li, 
+	.parallax-portfolio .slider a img{
+		width:100% !important;
+		max-width: 480px !important;
+		margin: 0 auto 20px auto;
+		}
+
+	.parallax-portfolio .slider a img{
+		display: block !important;
+		width:100% !important;
+		height: auto !important;
+		margin: 0 !important;
+		float: none;
+		}
+
+ 	.parallax-portfolio .slider li{
+ 		overflow: hidden;
+ 		margin: 0 0 20px 0;
+ 		}
+ 
+ 	.parallax-portfolio .slider .contents{
+ 		display: block;
+ 		clear: both;
+ 		float: none;
+ 		padding-top: 40px;
+ 		} 
+
+	.blogpost, .blogpage{
+		max-width: 100%;
+		}
+
+	.blogpost .blog-post-title,
+	.blogpost .entry-header, 
+	.blogpost{
+		min-height: 0 !important;
+		}
+
+	.parallax-page .team, 
+	.blogpost, 
+	.blogpage{
+		transform:none !important;
+		width:100% !important;
+		}
+
+	.parallax-page .member:last-child{
+		margin-bottom: 0;
+		}
+
+	.parallax-about.nano-content, 
+	.parallax-blog.nano-content, 
+	.parallax-portfolio.nano-content{
+		padding: 0 15px 0 0;
+		}
+
+	.parallax-portfolio #pager{
+		display: none !important;
+		}
+
+	.parallax-portfolio .slider{
+		width:100%;
+		}
+
+	.parallax-portfolio li, 
+	.parallax-portfolio ul{
+		list-style: none;
+		}
+
+	.parallax-page .team-content,
+	.parallax-page .team-group{
+		width:100%;
+		}
+
+	.post_format:before, 
+	.post_format{
+		display: none;
+		}
+
+	.blog-post-title, 
+	.entry-header .meta-details{
+		padding-left: 0;
+		}
+
+	.small-title .blog-post-title a, 
+	.small-title .blog-post-title{
+		font-size: 16px;
+		line-height: 20px;
+		}
+
+	.small-title .blog-post-title a{
+		padding-bottom: 10px;
+		display: block;
+		}
+
+	.entry-header, 
+	.entry-content{
+		padding: 15px 20px;
+		}
+
+	.entry-header .meta-details a, 
+	.cat-tag a{
+		font-size: 10px;
+		}
+
+	.page-title h1{
+		font-size: 28px;
+		}
+
+	.page-title h4{
+		font-size: 14px;
+		}
+
+	.parallax-page{
+		width:90%;
+		}
+
+	.parallax-portfolio .slider li img{
+		width:100%;
+		height: auto;
+		}
+
+	.parallax-portfolio .slider li img, 
+	.parallax-portfolio #pager{
+		width:100%;
+		}
+
+	.parallax-page .link{
+		padding: 5px 10px;
+		font-size: 13px;
+		}
+
+	/* Comment Form */
+	#commentform #author,
+	#commentform #email, 
+	#commentform #url, 
+	#commentform textarea {
+		width:99%;
+		}
+
+	.comment-meta{
+		width:280px;
+		}
+
+	.comment-metadata time{
+		font-size: 12px;
+		}
+
+	.comment-list ol.children{
+		padding-left: 0;
+		}
+
+	.comment-list .avatar{
+		width:40px;
+		height: auto;
+		margin-right: 10px;
+		}
+
+	.team-pic:hover, 
+	.team-desc:hover,
+	.team-desc{
+		opacity: 1 !important;
+		}
+
 }
-
-
-/* Wide Mobile Layout: 480px. */
-
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
+ 

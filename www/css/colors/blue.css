@@ -1,0 +1,244 @@
+/*------------------------------------------------------------------
+[Color codes]
+
+Background: #7fc9c7 (Blue)
+Pagination/Navigation/Preloader Background: #5bab9f (Dark Blue)
+Page Titles: #ebf7f6 (Light Blue)
+Links: #9caeae (Greyish Dark Blue)
+Text Fields: #f2f2f2 (Light Grey)
+Text Color: #999 (Grey)
+Link Hovers: #333 (Dark Grey)
+Button/Navigation Hover Background: #f5da41 (Yellow)
+-------------------------------------------------------------------*/
+
+html,
+body,
+.navbar-inverse .navbar-toggle:hover{
+	background-color: #000; 
+	}
+
+.page-title h4,
+.parallax-page .page-title h4,
+.page .page-title h4,
+.author .page-title h4,
+.page-desc{
+	color:#ebf7f6;
+	}
+
+.btn-default, 
+.parallax-page .content-box a.btn-default,
+.parallax-page .content-box a.btn-default i,
+.btn-group .btn-default i,
+.widget .btn-default i,
+.widget_tag_cloud a,
+.sidebar-module.widget  tfoot a,
+.icon,
+.team-desc,
+.overlay{
+	background:#ebf7f6;
+	border:none;
+	}
+
+
+body,
+.content-box p, 
+.content-box,
+.content-box .page-title h4,
+.page .entry-content,
+.comments-area,
+.comment-respond,
+.team-desc,
+.blog-main,
+.blog-sidebar,
+a{
+	color:#666;
+	}
+
+.search-field,
+#commentform #author, 
+#commentform #email, 
+#commentform #url, 
+#commentform textarea,
+textarea,
+input[type='text'],
+.search-form .search-submit,
+.widget .btn-default.search-submit i,
+.search-form .search-submit:hover, 
+.search-form .search-submit:hover i{
+	background:#f2f2f2;
+	}
+
+.navbar-inverse,
+.pagination > li > a, 
+.pagination > li > span,
+.pagination > li > a:hover, 
+.pagination > li > span:hover, 
+.pagination > li > a:focus, 
+.pagination > li > span:focus,
+#portfolio-cat-filter,
+.loading-page,
+.navbar-inverse .navbar-toggle{
+	/*background:#5bab9f;*/
+	}
+	
+.navbar-inverse .navbar-nav > li > a,
+.widget-title,
+.blog-post-title, 
+.team-content h3,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.parallax-page .entry-header .blog-post-title, 
+.parallax-page .entry-header .blog-post-title a,
+.search-field,
+#commentform #author, 
+#commentform #email, 
+#commentform #url, 
+#commentform textarea,
+textarea,
+input[type='text'],
+.search-form .search-submit,
+.widget .btn-default.search-submit i,
+.search-form .search-submit:hover, 
+.search-form .search-submit:hover i,
+.blog-main a:hover,
+.blog-sidebar a:hover,
+a:hover,
+.parallax-page a:hover,
+.parallax-page .content-box  a:hover,
+.parallax-page .content-box .page-title h1,
+.parallax-page .content-box a.btn-default:hover i,
+.parallax-page .content-box a.btn-default:hover,
+.btn-default:hover, 
+.content-box .btn-default:hover,
+.btn-default:hover i,
+.widget_tag_cloud a:hover,
+.btn-default:focus, 
+.btn-default:active, 
+.btn-default:focus i,
+.btn-default:active i,
+.btn-default.active i, 
+.btn-default.active, 
+.open .dropdown-toggle.btn-default,
+.sidebar-module.widget  tfoot a:hover,
+.icon:hover, 
+.icon:hover i,
+.parallax-page .btn:hover,
+.btn-default, 
+.parallax-page .content-box a.btn-default,
+.parallax-page .content-box a.btn-default i,
+.btn-group .btn-default i,
+.widget .btn-default i,
+.sidebar-module.widget  tfoot a,
+.icon{
+	color:#597189;
+	}
+	
+.navbar-inverse .navbar-nav > .current_page_item > a.dropdown-toggle, 
+nav .current_page_item, nav .current_page_item:hover, 
+nav .current_page_item a:focus, 
+.navbar-inverse .navbar-nav > li.current_page_item > a:hover, 
+.navbar-inverse .navbar-nav > li.current_page_item > a:focus, 
+nav .dropdown-menu > .active > a, 
+nav .dropdown-menu > .active > a:hover, 
+nav .dropdown-menu > .active > a:focus, 
+#masthead .navbar-nav li.current-menu-item, 
+.navbar-inverse .navbar-nav > .current_page_item > a, 
+.navbar-inverse .navbar-nav > .current_page_item > a:hover, 
+.navbar-inverse .navbar-nav > .current_page_item > a:focus,
+.pagination > li.active a,
+.pagination > .disabled > span, 
+.pagination > .disabled > span:hover, 
+.pagination > .disabled > span:focus, 
+.pagination > .disabled > a, 
+.pagination > .disabled > a:hover, 
+.pagination > .disabled > a:focus,
+.widget_tag_cloud a{
+	color:#fff;
+	}
+	
+.pace .pace-progress,
+.content-box .nano.has-scrollbar .nano-slider{
+	background:#333333;
+	}
+	
+.navbar-inverse .navbar-nav > .current_page_item > a.dropdown-toggle, 
+nav .current_page_item, nav .current_page_item:hover, 
+nav .current_page_item a:focus, 
+.navbar-inverse .navbar-nav > li.current_page_item > a:hover, 
+.navbar-inverse .navbar-nav > li.current_page_item > a:focus, 
+nav .dropdown-menu > .active > a, 
+nav .dropdown-menu > .active > a:hover, 
+nav .dropdown-menu > .active > a:focus, 
+#masthead .navbar-nav li.current-menu-item, 
+.navbar-inverse .navbar-nav > .current_page_item > a, 
+.navbar-inverse .navbar-nav > .current_page_item > a:hover, 
+.navbar-inverse .navbar-nav > .current_page_item > a:focus,
+.pagination > li.active a,
+.pagination > .active > a, 
+.pagination > .active > span, 
+.pagination > .active > a:hover, 
+.pagination > .active > span:hover, 
+.pagination > .active > a:focus, 
+.pagination > .active > span:focus,
+.pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus,
+.parallax-page .content-box a.btn-default:hover i,
+.parallax-page .content-box a.btn-default:hover,
+.btn-default:hover, 
+.content-box .btn-default:hover,
+.btn-default:hover i,
+.widget_tag_cloud a:hover,
+.btn-default:focus, 
+.btn-default:active, 
+.btn-default:focus i,
+.btn-default:active i,
+.btn-default.active i, 
+.btn-default.active, 
+.open .dropdown-toggle.btn-default,
+.sidebar-module.widget  tfoot a:hover,
+.icon:hover, 
+.icon:hover i,
+.parallax-page .btn:hover{
+	background:transparent;
+	}
+
+.blog-main a,
+.blog-sidebar a,
+.parallax-page .content-box a{
+	color:#6f9191;
+	}
+
+.parallax-page, .template-parallax, 
+.parallax-page .page-title h1,
+.pace .pace-progress:after,
+.navbar-inverse .navbar-nav > li > a,
+.pagination > li a,
+.pagination > li > span:hover, 
+.pagination > li > a:focus, 
+.pagination > li > span:focus,
+.navbar-inverse .navbar-nav > li > a:hover,
+.pagination > li a:hover,
+.page-title h1,
+.page .page-title h1,
+.author .page-title h1{
+	/*color:#fff;*/
+	}
+	
+.content-box, 
+.parallax-portfolio .slider li,
+.content-box .entry-header, 
+.content-box .team-content, 
+.content-box .team-content h3, 
+.content-box .team-content p, 
+.content-box .team .member, 
+.content-box .blogpost,
+.pace,
+.nano.has-scrollbar .nano-slider,
+.blog-post, 
+.sidebar-module,
+.widget{
+	background:#fff;
+	}

@@ -1,0 +1,236 @@
+/*------------------------------------------------------------------
+[Typography]
+
+Body copy:							13px/25px 'PT Sans', sans-serif, Arial;
+Headings:							Raleway, Helvetica, Arialf;
+Navigation and Sidebar Headings: 	Montserrat, Helvetica, Arial;
+
+1. Font Families
+2. Font Sizes
+3. Line Height
+4. Underline
+5. Text Alignment
+6. Font Weight
+-------------------------------------------------------------------*/
+
+/* Import Google Web Fonts */
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+
+
+
+/*------------------------------------------------------------------
+[1. Font Families]
+*/
+
+html, body{
+	font-family: 'PT Sans', sans-serif, Arial;
+	font:normal 13px/25px;
+	}	
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+.blog-post-title{
+	font-family: Raleway, Helvetica, Arial;
+	font-weight: 500;
+	}
+
+.navbar a,
+.pagination > li > a, 
+.pagination > li > span,
+.btn-default,
+.cat-tag a,
+.entry-header .meta-details a,
+.widget .widget-title,
+.page-title h1, 
+.parallax-page .page-title h1, 
+.page .page-title h1, 
+.author .page-title h1,
+.page-title h4, 
+.parallax-page .page-title h4, 
+.page .page-title h4, 
+.author .page-title h4{
+	font-family: Montserrat, Helvetica, Arial;
+	}
+		
+.page-title h1, 
+.parallax-page .page-title h1, 
+.page .page-title h1, 
+.author .page-title h1,
+.navbar a,
+.page-title h4, 
+.parallax-page .page-title h4, 
+.page .page-title h4, 
+.author .page-title h4,
+.btn-default,
+.cat-tag a,
+.entry-header .meta-details a,
+.widget .widget-title{
+	text-transform: uppercase;
+	}	
+
+
+/*------------------------------------------------------------------
+[2. Font Sizes]
+*/
+
+#recent-projects .bx-controls .bx-pager-item .bx-pager-link{
+	font-size: 0px;
+	}	
+
+.dropdown-menu > li > a span,
+.wp-caption p.wp-caption-text{
+    font-size: 10px;
+	}
+	
+.tooltip,
+.entry-header .meta-details a,
+.cat-tag a{
+	font-size: 11px;
+	}	
+	
+.dropdown-menu > li > a,
+.btn-default,
+.widget_tag_cloud a{
+	font-size: 12px !important;
+	}	
+	
+.page-desc,
+#portfolio-cat-filter li a span,
+.widget .widget-title{
+	font-size: 13px;
+	}
+
+#commentform #author, 
+#commentform #email,
+#commentform #url, 
+#commentform textarea,
+.comment-author .fn{
+	font-size: 15px;
+	}	
+	
+#portfolio-cat-filter .pagination > li > a, 
+#portfolio-cat-filter .pagination > li > span,
+.post_format:before{
+	font-size: 16px;
+	}
+	
+.pagination > li > a, 
+.pagination > li > span{
+	font-size: 18px;
+	}	
+	
+.parallax-page .link,
+.small-title .blog-post-title a, 
+.small-title .blog-post-title,
+.team-content h3,
+#recent-projects .overlay .icon-align{
+	font-size: 20px;
+	}
+
+.overlay i,
+.blogpost .post-title{
+	font-size:22px;
+	}	
+
+
+/*------------------------------------------------------------------
+[3. Line Height]
+*/
+
+.wp-caption p.wp-caption-text {
+	line-height: 1.5;
+	}	
+	
+dt, dd{
+	line-height: 2;
+	}
+		
+.widget .widget-title{
+	line-height: 20px;
+	}	
+			
+.small-title .blog-post-title a, 
+.small-title .blog-post-title,
+.team-content h3{
+	line-height: 26px;
+	}
+
+.blogpost .post-title{
+	line-height: 27px;
+	}
+			
+.post_format:before,
+.overlay i{
+	line-height: 50px;
+	}
+
+
+/*------------------------------------------------------------------
+[4. Underline]
+*/
+	
+.btn-default:hover,
+.widget_tag_cloud a:hover,
+.widget  tfoot a,
+.parallax-portfolio h2 a:hover,
+.entry-header a:hover{
+	text-decoration: none;
+	}	
+
+
+/*------------------------------------------------------------------
+[5. Text Alignment]
+*/
+
+.page-title,
+#portfolio-cat-filter .pagination,
+.related-items h2,
+#portslider li,
+.wp-caption,
+.btn-group-wrap,
+.overlay .icon-align,
+.bx-pager,
+.parallax-portfolio .slider li,
+.parallax-portfolio #pager,
+.team-pic,
+.team-content h3, 
+.team-content p, 
+.team-group,
+.member-social,
+.error404,
+.search-no-results,
+.widget table,
+.widget table th,
+.overlay i,
+.post_format:before,
+.entry-thumbnail{
+	text-align:center; 
+	}
+
+blockquote.left,
+.widget_categories li{
+	text-align: right;
+	}
+
+blockquote.right,
+.parallax-portfolio .contents,
+.widget_calendar caption {
+	text-align: left;
+	}
+
+
+/*------------------------------------------------------------------
+[6. Font Weight]
+*/
+	
+#commentform label,
+.widget .widget-title{
+	font-weight: normal;
+	}
