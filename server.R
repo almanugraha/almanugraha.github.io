@@ -1,5 +1,5 @@
 server <- function(input, output, session) {
-  live_comment <- read.table("data/comments.csv", header = T, sep = ",") 
+  live_comment <- drop_read_csv("comments.csv")
   tbl <- reactiveValues(cmt = live_comment)
   
   # output$comment_id <- DT::renderDT({
@@ -30,11 +30,12 @@ server <- function(input, output, session) {
     updateTextInput(session, "namesTextInput", value = "")
     updateTextAreaInput(session, "wishesTextAreaInput", value = "")
 
-    
     live_ <- rbind(live_comment, livenew)
     tbl$cmt <- live_
     
-    write.table(live_, "data/comments.csv", quote=FALSE, row.names=FALSE, sep = ",")
+    write.table(live_, "data/comments.csv", row.names = FALSE, quote = TRUE, sep = ",")
+    
+    drop_upload("data/comments.csv", mode = "overwrite")
   })
   
 }
